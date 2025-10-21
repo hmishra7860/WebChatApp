@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+.chat-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #161b22;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.current-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.current-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#logout-btn, #delete-chat-btn {
+  padding: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #d73a49;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#logout-btn:hover, #delete-chat-btn:hover {
+  background-color: #ea4c5a;
+}
+
+.search-box {
+  margin-bottom: 10px;
+}
+
+#user-search {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+#all-users {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+  border-top: 1px solid #444c56;
+}
+
+#all-users li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-bottom: 1px solid #444c56;
+  cursor: pointer;
+}
+
+#all-users li:hover {
+  background-color: #238636;
+}
+
+#all-users img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chat-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.message.self {
+  justify-content: flex-end;
+}
+
+.message img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 10px;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: #666;
+  margin-left: 8px;
+}
+
+#all-users li.active {
+  background-color: #2ea043;
+  font-weight: bold;
+}

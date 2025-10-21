@@ -1,0 +1,14 @@
+{
+  "Ritik": {
+    "username": "Ritik",
+    "password": "12345",
+    "email": "ritik@example.com",
+    "profile": "assets/default-avatar.png"
+  },
+  "Alice": {
+    "username": "Alice",
+    "password": "alice123",
+    "email": "alice@example.com",
+    "profile": "assets/default-avatar.png"
+  }
+}

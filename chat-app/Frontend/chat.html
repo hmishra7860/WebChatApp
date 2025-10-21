@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat</title>
+  <link rel="stylesheet" href="chat.css" />
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="chat-container">
+    <aside class="sidebar">
+      <div class="current-user">
+        <img id="user-avatar" src="assets/default-avatar.png" alt="User Avatar" />
+        <span id="user-name"></span>
+      </div>
+      <button id="logout-btn">Logout</button>
+      <input type="text" id="user-search" placeholder="Search users..." />
+      <ul id="all-users"></ul>
+      <button id="delete-chat-btn">Delete Chat</button>
+    </aside>
+    <section class="chat-main">
+      <div id="messages" class="messages"></div>
+      <form id="message-form">
+        <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off" required />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+  <script src="chat.js"></script>
+</body>
+
+</html>
